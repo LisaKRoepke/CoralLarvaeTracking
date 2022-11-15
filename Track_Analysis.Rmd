@@ -1,0 +1,1313 @@
+---
+title: 'Applying behavioral studies to the ecotoxicology of corals: a case study on Acropora millepora'
+subtitle: "The effect of three recently-developed and potentially non-toxic AF coatings: (i) antiadhesive, (ii) cerium dioxide (CeO2-x) nanoparticle, and (iii) encapsulated biocide dichlorooctylisothiazolinone (DCOIT) on the swimming velocity and activity of *Acropora millepora* coral larvae for potential use in reef-restoration activities"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: cerulean
+    df_print: paged
+    code_folding: hide
+    highlight: breezedark
+    toc: yes
+    toc_float: yes
+    number_sections: yes
+    smart: yes
+    code_download: yes
+  word_document:
+    toc: yes
+editor_options:
+  chunk_output_type: console
+---
+
+```{=html}
+<style type="text/css">
+body {font-size: 16px;} td, code.r, pre, #TOC {font-size: 12px;}
+div.main-container {max-width: 1200px !important; margin-left: auto; margin-right: auto;}
+</style>
+```
+
+***
+
+   
+
+# Information
+This script is part of the supplementary material of the journal article "Applying behavioral studies to the ecotoxicology of corals: a case study on Acropora millepora" by Roepke et al., published 2022 in Frontiers in Marine Science, Section Coral Reef Research (doi: 10.3389/fmars.2022.1002924). Refer to the literature list in the accompanying paper for all references found in this script and please cite this paper if you use parts of this script.  
+   
+   
+
+# Experimental Design  
+Behavioral responses are considered sensitive and effective indicators of organism stress. As the demand for standardized coral toxicity tests grows, innovative tools that allow for automatic and quantitative measurements of these behaviors may complement ecotoxicological studies. The rapid growth of competitive marine algae in aquaculture systems is a major issue for generating coral spat for reef restoration, and the application of non-toxic antifouling (AF) coatings might effectively mitigate this issue. While these coatings do not appear to be toxic to sensitive coral larvae, their potential to affect larval mobility has not been tested. In this context, we tested the effect of three recently-developed and potentially non-toxic AF coatings: (i) antiadhesive, (ii) cerium dioxide (CeO2-x) nanoparticle, and (iii) encapsulated biocide dichlorooctylisothiazolinone (DCOIT) on the swimming velocity and activity of Acropora millepora coral larvae for potential use in reef-restoration activities.
+   
+ 
+**Overview**  
+The behavior of 32 coral larvae per AF treatment were recorded, each for 25 min, using a photo box with two cameras set to record in parallel. 
+The tracking analysis was performed with the software Noldus EthoVision XT.   
+    
+  
+**Treatments**    
+1. Control (uncoated PMMA tiles)  
+2. Antiadhesive coating on PMMA tiles  
+3. Cerium dioxide nanoparticle coating on PMMA tiles  
+4. Encapsulated DCOIT on PMMA tiles  
+   
+  
+**Filming Setup**     
+Silicone sealing rings with an inner diameter of 15 mm were then placed on top of the PMMA tiles and filled with fresh 650 μL of 1-μm filtered natural seawater, creating small “pools” that kept the larvae on the tiles above the AF coatings. The silicone rings self-sealed against the PMMA tiles. Room temperature was kept at 28.5 °C which maintained water temperature in the pools at a stable 27.0 °C throughout the experiment. Two silicone rings, each holding a single 13-day-old larva, were placed on each tile. Shortly prior to each filming session, larvae were gently pipetted into the previously filled pools with as little excess water from the pipette. Four tiles, one for each treatment, were arranged to be filmed at the same time by one camera (Olympus TG-5). Each filming session included two sets of 4 tiles (1 tile per treatment), each filmed by a single camera. This totaled two cameras and 8 tiles per session (and 2 tiles per treatment per session). Tiles were coated on both sides and each side was used in a single trial (16 tiles per treatment). By conducting eight filming sessions of 28 minutes each, the tracks of 32 larvae were recorded for each treatment. After each filming session, silicone rings were rinsed with filtered seawater and applied on top of new tiles from the same treatment. New larvae from the rearing tank were introduced to fresh filtered seawater in each test. To prevent light reflections on the water surface and to increase the contrast between the larvae and the background for filming, the translucent tiles were placed inside a dark box on top of a light table. The light table was made from translucent white diffusive plastic and was lit from below by two LED light bars (ARLEC Model UC450, 4W, Cool White), providing equal lighting for all tiles. To provide an even surface for the tiles, a thick (2 cm) transparent PMMA block was placed on top of the light table. Both cameras were placed at an equal distance above the tiles (top-down view) and optical camera zoom was used to frame the tiles in the videos, ensuring no distortion around the edges. Recordings of both cameras were started simultaneously. The cameras were set to record at a resolution of 1920x1080 pixels (1080p/Full HD) and 25 frames per second. The recordings stopped automatically after 28 minutes when a file size of about four gigabytes was reached (limit of FAT32 formatted SD cards).   
+     
+  
+**Track Analysis**   
+The video editing program XMedia Recode (version 3.4.8.3) (Dörfler, 2019) was used for post-production of the video files. The first two and the last one minute of each video were cut to acquire clips with a duration of 25 minutes. This procedure ensured a steady video quality by eliminating possible effects from camera handling and allowed the larvae a couple minutes of acclimation. Based on literature (Faimali et al., 2017), and given the lack of information for coral larval swimming video-tracking analyses, 25 minutes of behavior observations was selected, allowing substantial observation durations and multiple tests with larvae of the same age. Before track-analysis, the video files were post-processed to enhance the contrast between the larvae and the background (see Supplementary Material for details). Subsequently, videos were converted from the original format (.mov) to .avi video-container-format for further application in the tracking software. EthoVision® XT (version 10.1.856; Noldus, Wageningen, Netherlands; Spink et al., 2001) was used to analyze larval behavior. The software generated data (every tenth of a second for each individual larva) of the distance moved (in mm) and the swimming activity (moving/not moving). “Minimal distance moved” in the EthoVision software’s “Track Smoothing Profiles” tab was set to record track changes only when the larvae moved more than 0.25 mm (direct distance; see Supplementary Material). The velocity of each larva while moving was calculated by dividing the total distance a larva traveled by the duration of time spent moving during the trial (as measured by EthoVision). The threshold velocity of the larvae considered “moving” was set to 0.033 mm s-1 (~1.98 mm min-1), whereas the threshold for “not moving” was a velocity below 0.02 mm s-1 (~1.21 mm min-1). If a larva traveled more than 1.98 mm min-1 initially, but lost speed below this threshold, “moving” was still detected. Below 1.21 mm min-1, however, no movement was measured. These settings suppressed noise by ensuring recordings of actual larval movements and minimizing “jitter of detail” video effects, that could have biased the data.
+  
+All acquired tracks were checked, and where necessary, corrected manually to ensure high data accuracy (see Supplementary Material for a detailed guide to the track analysis in EthoVision XT). EthoVision XT created result summaries of the trial statistics (raw data for the calculation of the velocity while moving) and group statistics, which were transferred to Microsoft Excel 2019.  
+   
+The analyses are presented in two parts. The first part focuses on differences in mean velocity and the second part on differences in the activity between treatments. 
+
+
+   
+
+***
+   
+
+
+# Preparations for Analyses
+This part of the script is necessary for running the analysis in R. Skip this step, if you are looking at the .pdf or .html version!
+   
+
+## Install & attach required packages
+
+```{r Preparations, message=FALSE, results= "hide", warning= F}
+
+# Make sure that required packages are installed
+
+packages <- c("tidyverse", "WRS2", "nlme", "emmeans", "sjPlot", "car", "psych", 
+              "ggrepel", "kableExtra", "openxlsx")
+
+if (length(missing_pkgs <- setdiff(packages, rownames(installed.packages()))) > 0) {
+  message("Installing missing package(s): ", paste(missing_pkgs, collapse = ", "))
+  install.packages(missing_pkgs)
+}
+
+# Attach required packages
+lapply(packages, require, character.only = TRUE)
+
+
+# Produce a custom ggplot2 themes for use during plotting 
+  # Simple Layout
+  mytheme1 <- theme(axis.line = element_line(color= "grey20", size= 0.75), 
+                    axis.ticks = element_line(colour = "grey20"), 
+                    panel.background = element_rect(color= "transparent", fill="grey90", size= 1),
+                    panel.grid.major.x = element_blank(),
+                    panel.grid.minor = element_blank()) 
+  
+  # For facet plots
+  mytheme3 <- theme(strip.background = element_blank(),
+                    strip.text.x = element_blank(),
+                    axis.line = element_line(color = "grey20", size= 0.75),
+                    panel.background = element_rect(color= "transparent", fill="grey90", size= 1),
+                    panel.grid.major.x = element_blank(),
+                    panel.grid.minor = element_blank()) 
+  
+# Change standard color palettes used in ggplot
+  ggplot <- function(...) ggplot2::ggplot(...) + 
+            scale_color_brewer(palette = "Dark2") +
+            scale_fill_brewer(palette = "Dark2")
+  
+  # Set manual color scales
+  # One color per treatment
+  col.man = c("#FA706E", "#00A100", "#6922C7", "#4A9DF7")
+  # For activity (moving/not moving)
+  col.man2 = c("#ff5050", "#00cc99")
+  
+# Set global chunk options
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, dev="svg", tidy= T, out.width = "90%")  
+  
+```
+   
+
+## Data import
+
+```{r Data Import, results= "hide", cache= F}
+
+# ATTENTION: Set working directory to .Rmd file location to make the following code work!
+  # This does the Job automatically in RStudio but might fail sometimes. Re-run until it changes the wd.
+  if (getwd() != dirname(rstudioapi::getActiveDocumentContext()$path)) {
+    setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+    }
+
+# Import track data 
+  Control = read.xlsx("Data/Control_Tracks.xlsx", sep= ";") %>% 
+            select(Trial_time, Treatment, Trial, Subject, Distance_moved, Moving, Not_Moving) %>%
+            as_tibble() 
+  
+  Anti = read.xlsx("Data/Antiadhesive_Tracks.xlsx", sep= ";") %>% 
+            select(Trial_time, Treatment, Trial, Subject, Distance_moved, Moving, Not_Moving) %>%
+            as_tibble() 
+  
+  Nano = read.xlsx("Data/Nanoparticles_Tracks.xlsx", sep= ";") %>% 
+            select(Trial_time, Treatment, Trial, Subject, Distance_moved, Moving, Not_Moving) %>%
+            as_tibble() 
+  
+  DCOIT = read.xlsx("Data/DCOIT_Tracks.xlsx", sep= ";") %>% 
+            select(Trial_time, Treatment, Trial, Subject, Distance_moved, Moving, Not_Moving) %>%
+            as_tibble() 
+
+    # Bind track data into a single dataframe (df)
+    tracks = bind_rows(Control, Anti, Nano, DCOIT) %>%
+              mutate(Treatment = fct_relevel(Treatment, 
+                                             "Control", "Antiadhesive", "Nanoparticles", "DCOIT"))
+    
+ 
+# Import trial information  
+  Info = read.xlsx("Data/Trial_Infos.xlsx", sep= ";") %>% 
+            mutate(Subject = if_else(Arena==1, "A", "B")) %>%
+            as_tibble()   
+  
+# Bind trial info to raw data, create larvae ID from trial-subject combinations and change variable types
+  tracks = left_join(tracks, Info, by= c("Treatment", "Trial", "Subject")) %>% 
+            mutate(Larvae = paste0(Trial, Subject)) %>%
+            mutate(across(c("Treatment", "Subject"), as_factor))
+  
+# Export unique trial information for later binding
+ info = tracks %>%
+   select(Treatment, Trial, Subject, Arena, Larvae, Session, Ring_position) %>%
+   mutate(across(c("Treatment", "Ring_position", "Arena"), as_factor)) %>%
+   unique()
+
+```
+
+```{r Save Data as .csv, eval=FALSE, include=FALSE}
+
+# This code can be used to save the joined track data
+# write.csv2(tracks, "Data/Track_Data.csv")
+
+```
+  
+  
+
+
+## Data manipulation
+From the raw data, the average swimming velocity and activity of the coral larvae can be computed.  
+The swimming activity (moving / not moving) was calculated as the sum of the time the larvae were swimming faster or slower than the threshold velocity. The threshold velocity of the larvae considered “moving” was set to 0.033 mm s-1 (~1.98 mm min-1), whereas the threshold for “not moving” was a velocity below 0.02 mm s-1 (~1.21 mm min-1). If a larva traveled more than 1.98 mm min-1 initially, but lost speed below this threshold, “moving” was still detected. Below 1.21 mm min-1, however, no movement was measured.  
+The swimming velocity of each larva was calculated by dividing the total distance a larva traveled by the duration of time spent moving during the trial. Looking at the swimming velocity while the larvae were moving has the advantage that the effect of the coating on the swimming speed rather then on the activity can be investigated (as compared to looking at the overall velocity).  
+
+```{r Data manipulation}
+
+# Calculate velocity while moving
+moving = tracks %>%
+  mutate(Larvae = as_factor(Larvae)) %>%
+  mutate(Distance_moved = ifelse(is.na(Distance_moved), 0, Distance_moved)) %>%
+  filter(Moving == 1, .preserve= T) %>%
+  group_by(Treatment, Larvae) %>%
+  summarize(Moving_time= (n()/10)/60,
+            Distance_Moving = sum(Distance_moved),
+            Velocity_Moving = Distance_Moving/Moving_time) %>%
+  ungroup() %>%
+  add_row(Treatment = "DCOIT", Larvae = "52A", Moving_time= 0, Distance_Moving = 0, 
+          Velocity_Moving = 0) %>%
+  mutate(Treatment = fct_relevel(Treatment, "Control", "Antiadhesive", "Nanoparticles", "DCOIT")) %>%
+  left_join(., info, by= c("Treatment", "Larvae"))
+
+
+# Calculate swimming activity
+  ## Get total trial time
+  total_time = tracks %>%
+    group_by(Treatment, Larvae) %>%
+    summarise(Trial_time= (n()/10)/60) %>%
+    left_join(., info, by= c("Treatment", "Larvae"))
+  
+  ## Get time moving
+  moving_time = moving %>% select(Treatment, Larvae, Moving_time, Session, Ring_position)
+  
+  ## Get time not moving
+  not_moving_time = tracks %>%
+    mutate(Larvae = as_factor(Larvae)) %>%
+    mutate(Distance_moved = ifelse(is.na(Distance_moved), 0, Distance_moved)) %>%
+    filter(Moving == 0, .preserve= T) %>%
+    group_by(Treatment, Larvae) %>%
+    summarize(Resting_time= (n()/10)/60) %>%
+    left_join(., info, by= c("Treatment", "Larvae")) %>% 
+    select(Treatment, Larvae, Resting_time, Session, Ring_position)
+  
+  
+  ## Join times
+  activity = left_join(total_time, moving_time, by= c("Treatment", "Larvae", "Session", "Ring_position")) %>%
+              left_join(., not_moving_time, by= c("Treatment", "Larvae", "Session", "Ring_position"))
+  
+  ## Calculate percentage moving / not-moving of total trial time
+  activity = activity %>%
+    mutate(Percent_moving = (100/Trial_time)*Moving_time,
+           Percent_resting = (100/Trial_time)*Resting_time)
+
+```
+  
+  
+
+
+# Data Review {.tabset}
+
+## Velocity while moving {.tabset .tabset-fade .tabset-pills}
+
+### Data overview & structure
+
+```{r Data overview & structure 2}
+
+# Raw Data
+head(moving)
+
+# Data structure
+str(moving)
+
+```
+   
+
+### Summary Tables
+  
+```{r Summary Table: Velocity while moving}
+
+# Velocity while moving per treatment
+sum_moving = moving %>%
+  group_by(Treatment) %>%
+  summarise(n_moving= n(),
+            Mean_Distance_Moving = mean(Distance_Moving),
+            SD_Distance_Moving = sd(Distance_Moving),
+            SE_Distance_Moving = SD_Distance_Moving/sqrt(n_moving),
+            min_Distance_Moving = min(Distance_Moving),
+            max_Distance_Moving = max(Distance_Moving),
+            range_Distance_Moving = max_Distance_Moving-min_Distance_Moving, 
+            Median_Distance_Moving = median(Distance_Moving),
+            IQR_Distance_Moving = IQR(Distance_Moving),
+            Mean_Velocity_Moving = mean(Velocity_Moving),
+            SD_Velocity_Moving = sd(Velocity_Moving),
+            SE_Velocity_Moving = SD_Velocity_Moving/sqrt(n_moving),
+            min_Velocity_Moving = min(Velocity_Moving), 
+            max_Velocity_Moving = max(Velocity_Moving), 
+            range_Velocity_Moving = max_Velocity_Moving - min_Velocity_Moving,
+            Median_Velocity_Moving = median(Velocity_Moving),
+            IQR_Velocity_Moving = IQR(Velocity_Moving))
+
+# Print summary table as tidy table  
+table_moving =
+  sum_moving %>% 
+    pivot_longer(2:ncol(.), names_to = "Statistic", values_to = "Value") %>%
+    pivot_wider(names_from = "Treatment", values_from = "Value") %>%
+    kbl(align = c("l", rep("c", length(.)-1)), digits= 3, format= "html",
+        caption= "Swimming distance/velocity while moving of A. tenuis larvae on 
+        antifouling treatments") %>% 
+    kable_classic(full_width = F, html_font = "Calibri")
+
+table_moving
+
+```
+   
+   
+
+
+## Activity {.tabset .tabset-fade .tabset-pills}
+
+### Data overview & structure
+
+```{r Data overview & structure 3}
+
+# Raw Data
+head(activity)
+
+# Data structure
+str(activity)
+
+```
+   
+
+### Summary Tables
+  
+```{r Summary Table: Activity}
+
+# Velocity while moving per treatment
+sum_activity = activity %>%
+  group_by(Treatment) %>%
+  summarise(n= n(),
+            Mean_Trial_Time = mean(Trial_time),
+            SD_Trial_Time = sd(Trial_time),
+            SE_Trial_Time = SD_Trial_Time/sqrt(n),
+            Mean_Time_Moving = mean(Moving_time),
+            SD_Time_Moving = sd(Moving_time), 
+            SE_Time_Moving = SD_Time_Moving/sqrt(n),
+            min_Time_Moving = min(Moving_time),
+            max_Time_Moving = max(Moving_time),
+            range_Time_Moving = max_Time_Moving - min_Time_Moving,
+            Median_Time_Moving = median(Moving_time),
+            IQR_Time_Moving = IQR(Moving_time),
+            Mean_Time_Resting = mean(Resting_time),
+            SD_Time_Resting = sd(Resting_time), 
+            SE_Time_Resting = SD_Time_Resting/sqrt(n), 
+            min_Time_Resting = min(Resting_time), 
+            max_Time_Resting = max(Resting_time),
+            range_Time_Resting = max_Time_Resting - min_Time_Resting,
+            Median_Time_Resting = median(Resting_time),
+            IQR_Time_Resting = IQR(Resting_time),
+            Mean_Percent_Moving = mean(Percent_moving),
+            SD_Percent_Moving = sd(Percent_moving), 
+            SE_Percent_Moving = SD_Percent_Moving/sqrt(n), 
+            min_Percent_Moving = min(Percent_moving),
+            max_Percent_Moving = max(Percent_moving), 
+            range_Percenent_Moving = max_Percent_Moving - min_Percent_Moving,
+            Median_Percent_Moving = median(Percent_moving),
+            IQR_Percent_Moving = IQR(Percent_moving),
+            Mean_Percent_Resting = mean(Percent_resting),
+            SD_Percent_Resting = sd(Percent_resting), 
+            SE_Percent_Resting = SD_Percent_Resting/sqrt(n),
+            min_Percent_Resting = min(Percent_resting),
+            max_Percent_Resting = max(Percent_resting),
+            range_Percent_Resting = max_Percent_Resting - min_Percent_Resting,
+            Median_Percent_Resting = median(Percent_resting),
+            IQR_Percent_Resting = IQR(Percent_resting))
+
+# Print summary table as tidy table  
+table_activity =
+  sum_activity %>% 
+    pivot_longer(2:ncol(.), names_to = "Statistic", values_to = "Value") %>%
+    pivot_wider(names_from = "Treatment", values_from = "Value") %>%
+    kbl(align = c("l", rep("c", length(.)-1)), digits= 3, format= "html",
+        caption= "Swimming activity of A. tenuis larvae on antifouling treatments") %>% 
+    kable_classic(full_width = F, html_font = "Calibri")
+
+table_activity
+
+```
+   
+   
+
+
+```{r Save summary tables, eval=FALSE, include=FALSE}
+
+# Save summary tables as .html file
+  # Velocity
+  save_kable(table_moving, file= "Tables/summary_table_moving.html")
+  # Activity
+  save_kable(table_activity, file= "Tables/summary_table_activity.html")
+
+# Save summary tables as .csv  
+  # Velocity
+  sum_moving %>% mutate_if(is.numeric, round, digits = 3) %>% 
+  write.xlsx(., "Tables/summary_table_moving.xlsx") 
+  # Activity
+  sum_activity %>% mutate_if(is.numeric, round, digits = 3) %>% 
+    write.xlsx(., "Tables/summary_table_activity.xlsx") 
+
+```
+   
+   
+
+
+***
+
+     
+      
+
+# Plots of Data {.tabset}
+
+## Velocity while moving
+
+**Boxplots**
+
+```{r, Boxplot: Velocity while moving}
+
+# Boxplot of distance moved by treatment group
+ggplot(data= moving, aes(x= reorder(Treatment, -Velocity_Moving), y= Velocity_Moving, 
+                         fill = reorder(Treatment, -Velocity_Moving), 
+                         color = reorder(Treatment, -Velocity_Moving))) +
+  geom_boxplot(position= position_dodge(1), lwd= 1, alpha= 0.33, outlier.size = 2.5)  + 
+  stat_boxplot(geom="errorbar", width= 0.5, lwd= 1, position= position_dodge(1)) + 
+    scale_fill_manual(values= col.man) +
+    scale_color_manual(values= col.man) +
+    labs(y= bquote("Velocity ("*mm~min^-1*")"), x= "Treatment") +
+    mytheme1 + theme(legend.position = "none")
+
+```
+    
+    
+
+**Errorplots**
+
+```{r Errorplot: Velocity while moving}
+
+# Errorplot for total distance moved by treatment group
+    ggplot(data= sum_moving, aes(x= reorder(Treatment, -Mean_Velocity_Moving), 
+                                 y= Mean_Velocity_Moving, 
+                                 fill= reorder(Treatment, -Mean_Velocity_Moving))) + 
+      geom_col(position=position_dodge(1)) +
+      geom_hline(yintercept = 0) +
+      geom_errorbar(aes(ymin= Mean_Velocity_Moving-SE_Velocity_Moving, 
+                        ymax= Mean_Velocity_Moving + SE_Velocity_Moving), 
+                    colour="black", width= 0.2, lwd= 1, position= position_dodge(1)) +
+      geom_text_repel(aes(label= paste0(round(Mean_Velocity_Moving, 3), " ±")), color= "grey20", 
+                      size= 3, fontface= "bold", ylim = c(NA, -0.05), min.segment.length = Inf, 
+                      position= position_dodge(1)) +
+      geom_text_repel(aes(label= paste0(round(SE_Velocity_Moving, 3), " SE")) , color= "grey20", 
+                      size=3, fontface= "bold", ylim = c(NA, -5.5), min.segment.length = Inf, 
+                      position= position_dodge(1)) +
+        scale_y_continuous(limits= c(-5, 100)) +
+        scale_fill_manual(values= col.man) +
+        labs(y= bquote("Velocity ("*mm~min^-1*")"), x= "Treatment") +
+        mytheme1 + theme(legend.position = "none")
+    
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Save previous plot
+ggsave("Plots/Velocity_Moving_SE.eps", device= "eps", dpi= 300, width= 10.5, height= 9.5, unit= "cm")
+
+```
+    
+   
+
+
+## Swimming Activity
+
+**Boxplots**
+
+```{r Boxplots: Activity}
+
+# Create long version of activity data
+activity_long = activity %>%
+  select(Treatment, Percent_moving, Percent_resting) %>%
+  pivot_longer(cols = c("Percent_moving", "Percent_resting"), 
+               names_to = "Activity", values_to = "Percent") %>%
+  mutate(Activity = fct_recode(Activity, "Moving" = "Percent_moving", 
+                               "Resting" = "Percent_resting"))
+
+# Boxplot of percent time moving/notmoving by treatment group
+ggplot(data= activity_long, aes(x= Treatment, y= Percent, 
+                         fill= reorder(Activity, -Percent), 
+                         color= reorder(Activity, -Percent))) +
+  stat_boxplot(geom="errorbar", width=0.3, position = position_dodge(0.9)) + 
+  geom_boxplot(position = position_dodge(0.9), alpha= 0.2) +
+  facet_wrap(~Treatment, nrow = 1, scales = "free_x") +
+    scale_fill_manual(values = col.man2) +
+    scale_color_manual(values = col.man2) +
+    labs(y="Time (in %)", x= "Treatment", fill= "Activity", color= "Activity") +
+    mytheme3
+
+```
+  
+  
+
+
+**Stacked Barcharts**
+
+```{r Stacked Boxplot: Activity}
+
+# Create long version of activity summary
+sum_activity_long = sum_activity %>%
+  select(Treatment, Mean_Percent_Moving, Mean_Percent_Resting) %>%
+  pivot_longer(cols = c("Mean_Percent_Moving", "Mean_Percent_Resting"), 
+               names_to = "Activity", values_to = "Percent") %>%
+  mutate(Activity = fct_recode(Activity, "Moving" = "Mean_Percent_Moving", 
+                               "Resting" = "Mean_Percent_Resting"))
+
+
+# Errorplot of percent time moving/notmoving by treatment group
+ggplot(data= sum_activity_long, aes(x= Treatment, y= Percent, label= paste0(round(Percent, 0), " %"), 
+                          fill= reorder(Activity, -Percent))) + 
+  geom_bar(stat= "identity", position= "stack") +
+  geom_label(position = position_stack(vjust = 0.5), size = 4, 
+             label.size = 0.35, show.legend = F) +
+  facet_wrap(~Treatment, nrow = 1, scales = "free_x") +
+    scale_fill_manual(values = col.man2) +
+    labs(y="Time (in %)", x= "Treatment", fill= "Activity") +
+    mytheme3 + theme(legend.position = "top")
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Save previous plot
+ggsave("Plots/Activity.eps", device= "eps", dpi= 300, width= 10, height= 10.5, unit= "cm")
+
+```
+   
+      
+
+
+**Errorplots**
+
+```{r Errorplot: Activity}
+
+# Create long version of SEs in activity summary
+sum_activity_SE = sum_activity %>%
+  select(Treatment, SE_Percent_Moving, SE_Percent_Resting) %>%
+  pivot_longer(cols = c("SE_Percent_Moving", "SE_Percent_Resting"), 
+               names_to = "Activity", values_to = "SE") %>%
+  mutate(Activity = fct_recode(Activity, "Moving" = "SE_Percent_Moving", 
+                               "Resting" = "SE_Percent_Resting"))
+  # Join with long summary of means
+  sum_activity_long = left_join(sum_activity_long, sum_activity_SE, by= c("Treatment", "Activity"))
+
+# Errorplot of percent time moving/notmoving by treatment group
+ggplot(data= sum_activity_long, aes(x= Treatment, y= Percent, fill= reorder(Activity, -Percent))) + 
+  geom_bar(stat= "identity", position=position_dodge(1)) +
+  geom_errorbar(aes(ymin= Percent-SE, ymax= Percent+SE), width=.25, position= position_dodge(1)) +
+  facet_wrap(~Treatment, nrow = 1, scales = "free_x") +
+    scale_fill_manual(values = col.man2) +
+    labs(y="Time (in %)", x= "Treatment", fill= "Activity") +
+    mytheme3
+
+```
+    
+    
+  
+***
+
+    
+    
+
+# Statistical Analysis {.tabset .tabset-fade}
+
+## Velocity while moving {.tabset .tabset-pills .tabset-fade}
+
+### Model Definition: LMM
+To investigate differences in larval swimming velocity among the AF treatments, linear mixed effects models (LMM) were fitted using the package 'nlme' (Pinheiro et al., 2021). Swimming velocity while moving ((cumulative distance moved (in mm))/(time moving (in min))) was used as response variable. The swimming velocity was square-root transformed to stabilize heteroscedasticity in the residuals. Treatment was always included as the sole fixed effect. Weights were adjusted to allow for unequal variances among treatments.
+
+The filming “session” was used as a proxy for time of day and included in each model as a random effect to account for possible variation due to diurnal patterns of larval behavior. Likelihood-ratio tests between the LMMs with “session” and baseline generalized least squares (GLS) models without random effects revealed that including the variable “session” significantly improved model performance in all cases (p < 0.05). Adding the “position” of the rings on the coated tiles (inner / outer corner of tile) as a random effect did not significantly improve model fit and was therefore omitted from all models. 
+
+Restricted maximum likelihood (REML) estimation was used for all models and statistical significance of the treatment effect was assessed using the ‘anova’ function included in ‘nlme’ (Pinheiro et al., 2021). The model was diagnosed and the satisfaction of model assumptions was checked using standard R model diagnostic plots with normalized residuals. Pairwise post-hoc tests based on estimated marginal means were run with the package ‘emmeans’ (Lenth, 2021) to find differences between each treatment pair. The p-value was adjusted for multiple testing with the Tukey method. Tests were performed on the sqrt-scale and back-transformed for visualization. 
+  
+> See pages 119-129 of "Mixed Effects Models and Extensions in Ecology with R" by Zuur *et al.* (2009) for supporting information.  
+ 
+
+```{r LMM Velocity while moving}
+
+# General least squares (GLS) model with correction for heteroscedasticity among treatment groups
+gls_moving <- gls(sqrt(Velocity_Moving) ~ Treatment, 
+                weights = varIdent(form= ~1|Treatment), 
+                method= "REML", data= moving)
+
+# General linear mixed model (GLMM) model with correction for heteroscedasticity among treatment groups and 
+# Session as random effect
+lmm_moving <- lme(sqrt(Velocity_Moving) ~ Treatment, 
+                 random = ~1|Session, 
+                 weights = varIdent(form= ~1|Treatment), 
+                 method= "REML", data= moving)
+
+# General linear mixed model (GLMM) model with correction for heteroscedasticity among treatment groups and 
+# Ring Position as random effect
+lmm_moving2 <- lme(sqrt(Velocity_Moving) ~ Treatment, 
+                 random = list(~1|Ring_position), 
+                 weights = varIdent(form= ~1|Treatment), 
+                 method= "REML", data= moving)
+
+# General linear mixed model (GLMM) model with correction for heteroscedasticity among treatment groups and 
+# Session as well as Ring Position as random effect
+lmm_moving3 <- lme(sqrt(Velocity_Moving) ~ Treatment, 
+                 random = list(~1|Ring_position, ~1|Session), 
+                 weights = varIdent(form= ~1|Treatment), 
+                 method= "REML", data= moving)
+
+
+# Likelihood ratio test between model without random effect, model with Session only, 
+# and model with Session & Ring position as random effect
+cat("Likelihood-ratio test between GLS, LMM with Session and LMM with Session and Ring Position:")  
+r1 = anova(gls_moving, lmm_moving, lmm_moving3)
+print(r1)
+  # p-value correction for testing on the boundary (GLS vs LMM with Session)
+  cat("Corrected p-vlaue for GLS vs LMM with Session as Random Effect:")
+  print(0.5 * (1 - pchisq(r1$L.Ratio[2], 1)))
+  # p-value correction for testing on the boundary (LMM with Session vs LMM with Session & Ring Position)
+  cat("Corrected p-vlaue for LMM with Session as Random Effect and LMM with Session and Ring Position as Random Effect:")
+  print(0.5 * ((1 - pchisq(r1$L.Ratio[3], 1)) + (1 - pchisq(r1$L.Ratio[3], 2))))
+
+# Likelihood ratio test between model without random effect, model with ring position only, 
+# and model with Session & Ring position as random effect  
+cat("Likelihood-ratio test between GLS, LMM with Ring Position and LMM with Session and Ring Position:")  
+r2 = anova(gls_moving, lmm_moving2, lmm_moving3)
+print(r2)
+  # p-value correction for testing on the boundary (GLS vs LMM with Session)
+  cat("Corrected p-vlaue for GLS vs LMM with Ring Position as Random Effect:")
+  print(0.5 * (1 - pchisq(r2$L.Ratio[2], 1)))
+  # p-value correction for testing on the boundary (LMM with Ring Position vs LMM with Session & Ring Position)
+  cat("Corrected p-vlaue for LMM with Session as Random Effect and LMM with Session and Ring Position as Random Effect:")
+  print(0.5 * ((1 - pchisq(r2$L.Ratio[3], 1)) + (1 - pchisq(r2$L.Ratio[3], 2))))
+
+
+# The LMM with Session as sole random effect is significantly better than the GLS without random effect
+cat("The LMM with Session as sole random effect is chosen since it performs significantly better than the GLS wihtout random effects. Also, the AIC is lowest for this model.")
+  
+  
+
+# Summary of model
+summary(lmm_moving)
+
+# Anova table
+print(Anova(lmm_moving))
+ 
+# Table of model results with exponentiated estimates. 
+  # Shows the difference between the antiadhesive treatment (reference) and the other treatments.
+  tab_model(lmm_moving, transform = "exp", show.se = T,
+            show.stat = T, show.aic = T, show.loglik = T,
+            string.se = "SE", string.intercept = "Intercept (Control)", dv.labels = "Mean Velocity")
+  
+# Plot of predicted event probabilities.
+# Shows how likely the event is to have occurred at a given timepoint (days).
+plot_model(lmm_moving, type= "est", transform = "exp", show.intercept = T, show.values = T) +
+  labs(title= "Model Estimates (Velocity by Treatment)") +
+  mytheme1
+
+```
+   
+   
+
+The Anova summary shows, that there are significant differences in the average larval velocity among the treatments (p-value < 0.05).  
+Before continuing with post-hoc tests, it is necessary to check the satisfaction of model assumptions.  
+    
+    
+
+
+### Model Diagnostics (Velocity while moving)  
+
+**1. Homoscedasticity (Homogeneity of Variances)**  
+
+``` {r Model Diagnostics: Homoscedasticity (Velocity while moving)}
+# Extract normalized residuals
+res_moving <- residuals(lmm_moving, type= "normalized")
+
+# Set plotting parameters
+par(mfrow= c(1,2))
+
+# Plot normalized residuals 
+plot(res_moving)
+
+# Plot boxplots of normalized residuals by treatment group
+boxplot(res_moving ~ moving$Treatment)
+
+# Levene's Test on equal variances among treatment groups
+print(leveneTest(res_moving ~ moving$Treatment))
+
+```
+    
+
+> Left Plot: Points should be equally spread around 0.
+  Right Plot: All boxplots should have approx. the same spread
+  p-value of Levene's Tests should be >= 0.05
+
+     
+
+**2. Normality of residuals**  
+  
+```{r Model Diagnostics: Normality (Velocity while moving)}
+
+# Set plotting parameters
+par(mfrow= c(1,1))
+
+# Normal QQ-Plot of normalized residuals
+qqnorm(res_moving)
+qqline(res_moving)
+
+# Shapiro-Wilk test on normality of normalized residuals
+shapiro.test(res_moving)
+
+```
+    
+
+> QQ-Plot: Points should lay approx. on the line
+> Shapiro-Wilk test: p-value should be >= 0.05
+
+    
+       
+
+
+### Post-Hoc Tests: Velocity while moving
+Post-Hoc tests were run pairwise between all treatment pairs while adjusting the p-value for multiple testing.   
+The Post-Hoc tests are performed on the basis of the estimated marginal means. The p-value is adjusted for multiple testing with the Tukey method. 
+  
+```{r Post-Hoc Tests (Velocity while moving)}
+
+# Compute pairwise comparisons
+emm_moving <- emmeans(lmm_moving, specs= pairwise~Treatment, adjust= "tukey", type= "response") 
+
+# Get summary
+summary(emm_moving, infer= T)
+
+```
+    
+
+> A p-value < 0.05 indicates significant differences between the tested pairs.
+
+    
+
+As the tables become crowded with pairs of 4 groups, it might be worthwhile to plot the results for a better overview: 
+    
+The estimated marginal means were visualized with their standard error and confidence intervals. The points show the estimated marginal means, the error bars their standard error and the transparent blue boxes the confidence intervals. 
+
+```{r Post-Hoc Tests: Plot of Estimated Marginal Means (Velocity while moving)}
+
+# Puts the emmeans part of the results into a df
+emmeans_moving = emm_moving$emmeans %>% as_tibble()
+      
+      # Plots the emmeans part
+      ggplot(data=emmeans_moving, aes(y= Treatment, x= response, color= Treatment, 
+                                       xmin= response-SE, xmax= response+SE)) + 
+        geom_linerange(aes(y= Treatment, xmin= lower.CL, xmax= upper.CL), 
+                       alpha= 0.25, lwd= 2) +
+        geom_point(size= 2, shape=16) +
+        geom_errorbar(width= 0.25) +
+        geom_text(aes(label= round(response, 3)), vjust= 3, show.legend = F) +
+          scale_color_manual(values= col.man) +
+          labs(x= "Estimated Marginal Mean", y="Treatment") +
+          mytheme1 +
+          theme(legend.position = "none", 
+                panel.grid.major.x = element_line(),
+                panel.grid.major.y = element_blank())
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Save previous plot
+ggsave("Plots/emmeans_moving.tiff", device= "tiff", dpi= 300, width= 14, height= 14, unit= "cm")
+ 
+```
+     
+
+The p-values can be plotted in a similar way as the estimated marginal means. Here, significant values are colored red for easier identification. Additionally, the significance cutoff at p= 0.05 is displayed as a vertical dashed, red line. The actual p-value is displayed as well. 
+
+```{r Post-Hoc Tests: Plots of p-values (Velocity while moving)}
+
+# Puts the contrasts part of the results into a df
+contrasts_moving = emm_moving$contrasts %>% summary(infer = TRUE) %>% as_tibble()
+
+  # Tweaks p-values, so that they appear as desired for plotting
+  contrasts_moving = contrasts_moving %>%
+    mutate(p.value.plot = ifelse(p.value <= 0.001, "< 0.001", round(p.value, 3))) %>%
+    mutate(sig.indicator = case_when(p.value < 0.001 ~ '***', p.value < 0.01 ~ '**', p.value < 0.05 ~ '*',
+                                     p.value < 0.1 ~ '•', TRUE ~ '')) %>%
+    mutate(sig.indicator2 = case_when(p.value < 0.05 ~ 'Significant', TRUE ~ 'Not significant')) 
+        
+# Plots p-values of pairwise comparisons
+ggplot(data=contrasts_moving, aes(y= reorder(contrast, p.value), x= p.value, label= p.value.plot,
+                                        color= sig.indicator2, shape= sig.indicator2)) + 
+  geom_point(size= 2) +
+  geom_vline(xintercept=0.05, linetype= "dashed", col= "red", alpha= 0.5) +
+  geom_text(nudge_x = 0.025, size= 3, show.legend = F, hjust= "centre") +
+    labs(x= "p-value", y="Compared Pair", color= "Significance", shape= "Significance") +
+    annotate("text", x= 0.1, y= 6.25, label= "p = 0.05", col= "red", alpha= 0.5) +
+    scale_color_manual(values=c("red", "black"),
+                       breaks=c("Significant", "Not significant"),
+                       labels=c("Significant \n (p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    scale_shape_manual(values=c(16, 21),
+                       breaks=c("Significant", "Not significant"),
+                       labels=c("Significant \n (p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    mytheme1 +
+    theme(legend.position = "top", 
+          legend.justification = "left",
+          panel.grid.major.x = element_line(),
+          panel.grid.major.y = element_line())
+    
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Save previous plot
+ggsave("Plots/pvalues_moving.tiff", device= "tiff", dpi= 300, width= 14, height= 14, unit= "cm")
+ 
+```
+     
+
+The estimates, standard errors and confidence intervals of the contrasts can be plotted similarly to the estimated marginal means.  
+For better comprehension, significant (p < 0.05) test are colored red. Further, significance levels are denoted by:   
+     
+    p < 0.001 = ***   
+    p < 0.01 = **    
+    p < 0.05 = *    
+    p < 0.1 = •  
+    
+Confidence intervals are shown as transparent blue bars.    
+
+```{r Post-Hoc Tests: Plot of Estimates (Velocity while moving)}
+
+# Plots estimated values of pairwise comparison, also shows significance
+ggplot(data= contrasts_moving, aes(y= reorder(contrast, estimate), x= estimate, color= sig.indicator2)) + 
+  geom_vline(xintercept= 0, linetype= "dashed", alpha= 0.6) +
+  geom_linerange(aes(y= reorder(contrast, estimate), x= estimate, xmin= lower.CL, xmax= upper.CL),
+                 color= "blue", alpha= 0.25, lwd= 2) +
+  geom_point(aes(shape= sig.indicator2), size= 2) +
+  geom_errorbar(aes(xmin= estimate-SE, xmax= estimate+SE), width= .35) +
+  geom_text(aes(label= sig.indicator), nudge_x = 0.75, nudge_y = 0.05, size= 5, show.legend = F) +
+  geom_text(aes(label= round(estimate, 3)), vjust= 2.5, size= 3.25, show.legend = F) +
+    scale_color_manual(values=c("red", "black"),
+                      name= "Significance",
+                      breaks=c("Significant", "Not significant"),
+                      labels=c("Significant \n(p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    scale_shape_manual(values=c(19, 21),
+                      name= "Significance",
+                      breaks=c("Significant", "Not significant"),
+                      labels=c("Significant \n(p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    labs(x= "Estimate", y="Compared Pair") +
+    mytheme1 +
+    theme(legend.position = "top",
+          legend.justification = "left",
+          panel.grid.major.x = element_line(),
+          panel.grid.major.y = element_blank())
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Save previous plot
+ggsave("Plots/contrasts_moving.tiff", device= "tiff", dpi= 300, width= 14, height= 14, unit= "cm")
+ 
+```
+   
+
+Finally, tidy tabular overviews of the results are shown here:  
+
+**Table of Estimated Marginal Means**    
+
+```{r Table of Emmeans (Velocity while moving)}
+
+# Table of Emmeans
+emmeans_moving_table =
+emmeans_moving %>%
+  dplyr::rename(Treatment= Treatment, 
+         "lower CL" = "lower.CL",
+         "upper CL" = "upper.CL") %>%
+  kbl() %>% 
+  kable_classic(full_width = F, html_font = "Calibri") %>% 
+  footnote(general= "Degrees-of-freedom method: containment 
+Confidence level used: 0.95 
+Intervals are back-transformed from the sqrt(mu + 0.01) scale 
+Tests are performed on the sqrt(mu + 0.01) scale", 
+  general_title = "")
+
+emmeans_moving_table
+
+```
+   
+
+**Table of Contrasts**   
+
+```{r Table of Contrasts (Velocity while moving)}
+
+# Table of Contrasts
+contrasts_moving_table =
+contrasts_moving %>%
+  dplyr::select(-c(p.value, sig.indicator, sig.indicator2)) %>%
+  dplyr::rename(Contrast= contrast,
+         Estimate = estimate,  
+         "lower CL" = lower.CL,
+         "upper CL" = upper.CL,
+         "t ratio" = t.ratio, 
+         "p-value" = p.value.plot) %>%
+  kbl() %>% 
+  kable_classic(full_width = F, html_font = "Calibri") %>% 
+  footnote(general= "Note: contrasts are still on the sqrt(mu + 0.01) scale 
+Degrees-of-freedom method: containment 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates ",
+           general_title = "")
+
+contrasts_moving_table
+
+```
+
+
+```{r Save Tables (Velocity while moving), eval=FALSE, include=FALSE}
+
+# Save Emmeans Table
+  # As HTML
+  save_kable(emmeans_moving_table, file= "Tables/emmeans_table_moving.html")
+  # As Excel
+  emmeans_moving %>% mutate_if(is.numeric, round, digits = 3) %>% 
+    write.xlsx(., "Tables/emmeans_table_moving.xlsx")
+
+# Save Contrasts Table
+  # As HTML
+  save_kable(contrasts_moving_table, file= "Tables/contrasts_table_moving.html")
+  # As Excel
+  contrasts_moving %>% mutate_if(is.numeric, round, digits = 3) %>% 
+    write.xlsx(., "Tables/contrats_table_moving.xlsx")
+
+```
+   
+   
+
+
+***
+
+   
+
+## Swimming Activity {.tabset .tabset-pills .tabset-fade}
+
+### Model Definition: LMM
+To investigate differences in larval swimming activity among the AF treatments, linear mixed effects models (LMM) were fitted using the package 'nlme' (Pinheiro et al., 2021). Swimming activity (time moving (in percent)) was used as response variable. The swimming activity was log-transformed (after adding a small constant) to stabilize heteroscedasticity in the residuals. Treatment was always included as the sole fixed effect. Weights were adjusted to allow for unequal variances among treatments.
+
+The filming “session” was used as a proxy for time of day and included in each model as a random effect to account for possible variation due to diurnal patterns of larval behavior. Likelihood-ratio tests between the LMMs with “session” and baseline generalized least squares (GLS) models without random effects revealed that including the variable “session” significantly improved model performance in all cases (p < 0.05). Adding the “position” of the rings on the coated tiles (inner / outer corner of tile) as a random effect did not significantly improve model fit and was therefore omitted from all models. 
+
+Restricted maximum likelihood (REML) estimation was used for all models and statistical significance of the treatment effect was assessed using the ‘anova’ function included in ‘nlme’ (Pinheiro et al., 2021). The model was diagnosed and the satisfaction of model assumptions was checked using standard R model diagnostic plots with normalized residuals. Pairwise post-hoc tests based on estimated marginal means were run with the package ‘emmeans’ (Lenth, 2021) to find differences between each treatment pair. The p-value was adjusted for multiple testing with the Tukey method. Tests were performed on the log-scale and back-transformed for visualization. 
+  
+> See pages 119-129 of "Mixed Effects Models and Extensions in Ecology with R" by Zuur *et al.* (2009) for supporting information.
+ 
+
+```{r LMM Activity}
+
+# General least squares (GLS) model with correction for heteroscedasticity among treatment groups
+gls_act <- gls(log(Percent_moving + 0.1) ~ Treatment, 
+                weights = varIdent(form= ~1|Treatment), 
+                method= "REML", data= activity)
+
+# General linear mixed model (GLMM) model with correction for heteroscedasticity among treatment groups and 
+# Session as random effect
+lmm_act <- lme(log(Percent_moving + 0.1) ~ Treatment, 
+                 random = ~1|Session, 
+                 weights = varIdent(form= ~1|Treatment), 
+                 method= "REML", data= activity)
+
+# General linear mixed model (GLMM) model with correction for heteroscedasticity among treatment groups and 
+# Ring Position as random effect
+lmm_act2 <- lme(log(Percent_moving + 0.1) ~ Treatment, 
+                 random = list(~1|Ring_position), 
+                 weights = varIdent(form= ~1|Treatment), 
+                 method= "REML", data= activity)
+
+# General linear mixed model (GLMM) model with correction for heteroscedasticity among treatment groups and 
+# Session as well as Ring Position as random effect
+lmm_act3 <- lme(log(Percent_moving + 0.1) ~ Treatment, 
+                 random = list(~1|Ring_position, ~1|Session), 
+                 weights = varIdent(form= ~1|Treatment), 
+                 method= "REML", data= activity)
+
+
+# Likelihood ratio test between model without random effect, model with Session only, 
+# and model with Session & Ring position as random effect
+cat("Likelihood-ratio test between GLS, LMM with Session and LMM with Session and Ring Position:")  
+r3 = anova(gls_act, lmm_act, lmm_act3)
+print(r3)
+  # p-value correction for testing on the boundary (GLS vs LMM with Session)
+  cat("Corrected p-vlaue for GLS vs LMM with Session as Random Effect:")
+  print(0.5 * (1 - pchisq(r3$L.Ratio[2], 1)))
+  # p-value correction for testing on the boundary (LMM with Session vs LMM with Session & Ring Position)
+  cat("Corrected p-vlaue for LMM with Session as Random Effect and LMM with Session and Ring Position as Random Effect:")
+  print(0.5 * ((1 - pchisq(r3$L.Ratio[3], 1)) + (1 - pchisq(r3$L.Ratio[3], 2))))
+
+# Likelihood ratio test between model without random effect, model with ring position only, 
+# and model with Session & Ring position as random effect  
+cat("Likelihood-ratio test between GLS, LMM with Ring Position and LMM with Session and Ring Position:")  
+r4 = anova(gls_act, lmm_act2, lmm_act3)
+print(r4)
+  # p-value correction for testing on the boundary (GLS vs LMM with Session)
+  cat("Corrected p-vlaue for GLS vs LMM with Ring Position as Random Effect:")
+  print(0.5 * (1 - pchisq(r4$L.Ratio[2], 1)))
+  # p-value correction for testing on the boundary (LMM with Ring Position vs LMM with Session & Ring Position)
+  cat("Corrected p-vlaue for LMM with Session as Random Effect and LMM with Session and Ring Position as Random Effect:")
+  print(0.5 * ((1 - pchisq(r4$L.Ratio[3], 1)) + (1 - pchisq(r2$L.Ratio[3], 2))))
+
+
+# The LMM with Session as sole random effect is significantly better than the GLS without random effect
+  cat("The LMM with Session as sole random effect is chosen since it performs significantly better than the GLS without random effects. Also, the AIC is lowest for this model.")
+  
+  
+
+# Summary of model
+summary(lmm_act)
+
+# Anova table
+print(Anova(lmm_act))
+
+# Table of model results with exponentiated estimates. 
+  # Shows the difference between the antiadhesive treatment (reference) and the other treatments.
+  tab_model(lmm_act, transform = "exp", show.se = T,
+            show.stat = T, show.aic = T, show.loglik = T,
+            string.se = "SE", string.intercept = "Intercept (Control)", dv.labels = "Mean Velocity")
+  
+# Plot of predicted event probabilities.
+# Shows how likely the event is to have occurred at a given timepoint (days).
+plot_model(lmm_act, type= "est", transform = "exp", show.intercept = T, show.values = T) +
+  labs(title= "Model Estimates (Velocity by Treatment)") +
+  mytheme1
+
+```
+   
+
+The Anova summary shows, that there are significant differences in the average larval activity among the treatments (p-value < 0.05). 
+    
+Before continuing with post-hoc tests, it is necessary to check the satisfaction of model assumptions.
+    
+    
+
+
+### Model Diagnostics (Activity)  
+
+**1. Homoscedasticity (Homogeneity of Variances)**  
+
+``` {r Model Diagnostics: Homoscedasticity (Activity)}
+# Extract normalized residuals
+res_act <- residuals(lmm_act, type= "normalized")
+
+# Set plotting parameters
+par(mfrow= c(1,2))
+
+# Plot normalized residuals 
+plot(res_act)
+
+# Plot boxplots of normalized residuals by treatment group
+boxplot(res_act ~ activity$Treatment)
+
+# Levene's Test on equal variances among treatment groups
+print(leveneTest(res_act ~ activity$Treatment))
+
+```
+    
+
+> Left Plot: Points should be equally spread around 0.  
+  Right Plot: All boxplots should have approx. the same spread  
+  p-value of Levene's Tests should be >= 0.05  
+
+     
+
+**2. Normality of residuals**  
+  
+```{r Model Diagnostics: Normality (Activity)}
+
+# Normal QQ-Plot of normalized residuals
+qqnorm(res_act)
+qqline(res_act)
+
+# Shapiro-Wilk test on normality of normalized residuals
+shapiro.test(res_act)
+
+```
+    
+
+> QQ-Plot: Points should lay approx. on the line.  
+  Shapiro-Wilk test: p-value should be >= 0.05  
+
+    
+
+
+### Post-Hoc Tests: Activity  
+Post-Hoc tests were run pairwise between all treatment pairs while adjusting the p-value for multiple testing.
+Post-Hoc tests are performed on the basis of the estimated marginal means. The p-value is adjusted for multiple testing with the Tukey method. 
+   
+  
+```{r Post-Hoc Tests (Activity)}
+
+emm_act <- emmeans(lmm_act, specs= pairwise~Treatment, adjust= "tukey", type= "response") 
+summary(emm_act, infer= T)
+
+```
+    
+
+> A p-value smaller than 0.05 indicates significant differences between the tested pairs.  
+
+     
+
+As the tables become crowded with pairs of 4 groups, it might be worthwhile to plot the results for a better overview: 
+    
+The estimated marginal means can be visualized with their standard error and confidence intervals. The points show the estimated marginal means, the errorbars their standard error and the transparent blue boxes the confidence intervals. 
+
+```{r Post-Hoc Tests: Plot of Estimated Marginal Means (Activity)}
+
+# Puts the emmeans part of the results into a df
+emmeans_act = emm_act$emmeans %>% as_tibble()
+      
+      # Plots the emmeans part
+      ggplot(data=emmeans_act, aes(y= Treatment, x= response, color= Treatment,
+                                   xmin= response-SE, xmax= response+SE)) + 
+        geom_linerange(aes(y= Treatment, xmin= lower.CL, xmax= upper.CL), 
+                       alpha= 0.25, lwd= 2) +
+        geom_point(size= 2, shape=16) +
+        geom_errorbar(width= 0.25) +
+        geom_text(aes(label= round(response, 3)), vjust= 3, show.legend = F) +
+          scale_color_manual(values= col.man) +
+          labs(x= "Estimated Marginal Mean", y="Treatment") +
+          mytheme1 +
+          theme(legend.position = "none", 
+                panel.grid.major.x = element_line(),
+                panel.grid.major.y = element_blank())
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Saves previous plot
+ggsave("Plots/emmeans_act.tiff", device= "tiff", dpi= 300, width= 12, height= 12, unit= "cm")
+ 
+```
+    
+
+The p-values can be plotted in a similar way as the estimated marginal means. Here, significant values are colored red for easier identification. Additionally, the significance cutoff at p= 0.05 is displayed as a vertical dashed, red line. The actual p-value is displayed as well. 
+
+```{r Post-Hoc Tests: Plots of p-values (Activity)}
+
+# Puts the contrasts part of the results into a df
+contrasts_act = emm_act$contrasts %>% summary(infer = TRUE) %>% as_tibble()
+
+  # Tweaks p-values, so that they appear as desired for plotting
+  contrasts_act = contrasts_act %>%
+    mutate(p.value.plot = ifelse(p.value <= 0.001, "< 0.001", round(p.value, 3))) %>%
+    mutate(sig.indicator = case_when(p.value < 0.001 ~ '***', p.value < 0.01 ~ '**', p.value < 0.05 ~ '*',
+                                     p.value < 0.1 ~ '•', TRUE ~ '')) %>%
+    mutate(sig.indicator2 = case_when(p.value < 0.05 ~ 'Significant', TRUE ~ 'Not significant')) 
+        
+# Plots p-values of pairwise comparisons
+ggplot(data=contrasts_act, aes(y= reorder(contrast, p.value), x= p.value, label= p.value.plot,
+                                        color= sig.indicator2, shape= sig.indicator2)) + 
+  geom_point(size= 2) +
+  geom_vline(xintercept=0.05, linetype= "dashed", col= "red", alpha= 0.5) +
+  geom_text(nudge_x = 0.075, size= 3, show.legend = F, hjust= "centre") +
+    labs(x= "p-value", y="Compared Pair", color= "Significance", shape= "Significance") +
+    annotate("text", x= 0.15, y= 6.3, label= "p = 0.05", col= "red", alpha= 0.5) +
+    scale_color_manual(values=c("red", "black"),
+                       breaks=c("Significant", "Not significant"),
+                       labels=c("Significant \n (p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    scale_shape_manual(values=c(16, 21),
+                       breaks=c("Significant", "Not significant"),
+                       labels=c("Significant \n (p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    mytheme1 +
+    theme(legend.position = "top", 
+          legend.justification = "left",
+          panel.grid.major.x = element_line(),
+          panel.grid.major.y = element_line())
+    
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Saves previous plot
+ggsave("Plots/pvalues_act.tiff", device= "tiff", dpi= 300, width= 12, height= 12, unit= "cm")
+ 
+```
+    
+
+The estimates, standard errors and confidence intervals of the contrasts can be plotted similarly to the estimated marginal means.  
+For better comprehension, significant (p < 0.05) test are colored red. Further, significance levels are denoted by:   
+          
+    p < 0.001 = ***   
+    p < 0.01 = **    
+    p < 0.05 = *    
+    p < 0.1 = •  
+
+Confidence intervals are shown as transparent blue bars.    
+
+```{r Post-Hoc Tests: Plot of Estimates (Activity)}
+
+# Plots estimated values of pairwise comparison, also shows significance
+ggplot(data= contrasts_act, aes(y= reorder(contrast, ratio), x= ratio, color= sig.indicator2)) + 
+  geom_vline(xintercept= 0, linetype= "dashed", alpha= 0.6) +
+  geom_linerange(aes(y= reorder(contrast, ratio), x= ratio, xmin= lower.CL, xmax= upper.CL),
+                 color= "blue", alpha= 0.25, lwd= 2) +
+  geom_point(aes(shape= sig.indicator2), size= 2) +
+  geom_errorbar(aes(xmin= ratio-SE, xmax= ratio+SE), width= .35) +
+  geom_text(aes(label= sig.indicator), nudge_x = 25, nudge_y = 0.05, size= 5, show.legend = F) +
+  geom_text(aes(label= round(ratio, 3)), vjust= 2.5, size= 3.25, show.legend = F) +
+    scale_color_manual(values=c("red", "black"),
+                      name= "Significance",
+                      breaks=c("Significant", "Not significant"),
+                      labels=c("Significant \n(p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    scale_shape_manual(values=c(19, 21),
+                      name= "Significance",
+                      breaks=c("Significant", "Not significant"),
+                      labels=c("Significant \n(p < 0.05)", "Not significant \n(p >= 0.05)")) +
+    labs(x= "Estimate", y="Compared Pair") +
+    mytheme1 +
+    theme(legend.position = "top",
+          legend.justification = "left",
+          panel.grid.major.x = element_line(),
+          panel.grid.major.y = element_blank())
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+# Saves previous plot
+ggsave("Plots/contrasts_act.tiff", device= "tiff", dpi= 300, width= 14, height= 14, unit= "cm")
+ 
+```
+    
+
+Finally, a tidy tabular overview over the results is shown here.  
+
+**Estimated Marginal Means Table**  
+
+```{r Emmeans table (Activity)}
+
+# Table of Emmeans
+emmeans_act_table =
+emmeans_act %>%
+  dplyr::rename(Treatment= Treatment, 
+         "lower CL" = "lower.CL",
+         "upper CL" = "upper.CL") %>%
+  kbl(digits= 3) %>% 
+  kable_classic(full_width = F, html_font = "Calibri") %>% 
+  footnote(general= "Degrees-of-freedom method: containment 
+Confidence level used: 0.95 
+Intervals are back-transformed from the log(mu + 0.1) scale 
+Tests are performed on the log(mu + 0.1) scale", 
+  general_title = "")
+
+emmeans_act_table
+
+```
+   
+
+**Contrasts Table**   
+
+```{r Contrasts table (Activity)}
+
+# Table of Contrasts
+contrasts_act_table =
+contrasts_act %>%
+  dplyr::select(-c(p.value, sig.indicator, sig.indicator2)) %>%
+  dplyr::rename(Contrast= contrast,
+         Ratio = ratio,  
+         "lower CL" = lower.CL,
+         "upper CL" = upper.CL,
+         "t ratio" = t.ratio, 
+         "p-value" = p.value.plot) %>%
+  kbl(digits= 3) %>% 
+  kable_classic(full_width = F, html_font = "Calibri") %>% 
+  footnote(general= "Degrees-of-freedom method: containment 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+Intervals are back-transformed from the log scale 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Tests are performed on the log scale",
+           general_title = "")
+
+contrasts_act_table
+
+```
+
+
+```{r Save Tables (Activity), eval=FALSE, include=FALSE}
+
+# Save Emmeans Table
+  # As HTML
+  save_kable(emmeans_act_table, file= "Tables/emmeans_table_act.html")
+  # As Excel
+  emmeans_act %>% mutate_if(is.numeric, round, digits = 3) %>% 
+    write.xlsx(., "Tables/emmeans_table_act.xlsx")
+
+# Save Contrasts Table
+  # As HTML
+  save_kable(contrasts_act_table, file= "Tables/contrasts_table_act.html")
+  # As Excel
+  contrasts_act %>% mutate_if(is.numeric, round, digits = 3) %>% 
+    write.xlsx(., "Tables/contrasts_table_act.xlsx")
+
+```
+    
+    
+
+***
+
+   
+
+# Session Info
+
+```{r Session Info}
+ 
+sessionInfo()
+
+```
+
