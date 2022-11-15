@@ -6,4 +6,4 @@ This repository holds supplementary material for the journal article "Applying b
 In the study, *Acropora millepora* coral larvae were exposed to different antifouling coatings and recorded from above using cameras. 
 To investigate the effect of the antifouling coatings on the swimming velocity and activity of the larvae, their tracks were analyzed using the software Noldus Ethovision XT with subsequent data analysis in R.  
 
-Here, we supply a manual that offers guidance for the track analysis process in Noldus Ethovision XT, as well as an RMarkdown document that show the analysis of the track data. 
+Here, we supply a manual that offers guidance for the track analysis process in Noldus Ethovision XT, as well as an RMarkdown document that shows the analysis of the track data. 
