@@ -18,7 +18,8 @@ In order to investigate the effect of the antifouling coatings on the swimming v
 Here, we supply: 
   1. A manual that offers guidance for the track analysis process in Noldus EthoVision XT  
   2. An RMarkdown (.Rmd) script that shows the analysis of the track data in R(Studio)   
-  3. The knitted HTML version of the RMarkdown document that includes all results and figures   
+  3. The knitted HTML version of the RMarkdown document that includes all results and figures 
+  4. A document with supplementary tables from the paper  
   
 A video walkthrough of the track analysis in Noldus EthoVision XT can be found [here](https://youtu.be/iKllYHpvXjk). 
   
